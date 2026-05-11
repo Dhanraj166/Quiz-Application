@@ -7,7 +7,7 @@ https://quiz-application-tawny-zeta.vercel.app
 
  Features
 ·	 Multiple quiz categories
-·	⏱ Real-time score calculation
+·	 Real-time score calculation
 ·	 Progress bar for quiz completion
 ·	 Instant feedback on answers
 ·	 Detailed results summary
