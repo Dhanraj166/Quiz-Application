@@ -7,7 +7,7 @@ function User() {
   const { setUser, setNav } = useContext(quizContext);
   const [name, setName] = useState("");
   const [error, setError] = useState("");
-  const inputRef = useRef(null);
+  const inputRef = useRef();
 
   useEffect(() => {
     inputRef.current.focus()
@@ -18,7 +18,6 @@ function User() {
       setError("Please enter your name");
       return;
     }
-    setError("");
     setUser(name);
     setNav(true);
     navigate('/quiz');
@@ -35,7 +34,7 @@ function User() {
         onChange={(e) => setName(e.target.value)}
       />
 
-      {error && <h3 style={{ color: "#f84a4a", fontSize: "20px"}}>{error}</h3>}
+      {error && <h3 style={{ color: "#f84a4a", fontSize: "30px"}}>{error}</h3>}
 
       <button className="btn-start" onClick={startQuiz}>Start quiz</button>
     </div>

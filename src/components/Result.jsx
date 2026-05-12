@@ -12,7 +12,7 @@ function Result() {
                     <h1>{user} you got </h1>
                     <div className="score-ring">
                         <span className="score-num">{score}</span>
-                        <span className="score-total">of 10</span>
+                        <span className="score-total">of 5</span>
                     </div>
                 </div>
                 <button className="btn-home" onClick={() => {
